@@ -6,7 +6,7 @@ ZEAI Viewer will automatically randomly select a file with an appropriate extens
 
 ## How to use ZEAI Opener
 
-* Download the latest release
+* Download the [latest release](https://github.com/ZeroBossSq/ZEAI-Viewer/releases/tag/Release)
 * Put the valid .zeai image in the 'view' folder
 * Open main.exe
 
@@ -19,6 +19,7 @@ ZEAI Viewer will automatically randomly select a file with an appropriate extens
 
 ## How to use ZEAI to PNG Converter
 
+* Download the [latest release](https://github.com/ZeroBossSq/ZEAI-Viewer/releases/tag/Release)
 * Place a valid .zeai image to 'view' dir
 * Open 'zeai2png.exe' app
 * Enter the name of your image without the extension (e.g. if your image is "Cool pixel art.zeai" then write "Cool pixel art")
