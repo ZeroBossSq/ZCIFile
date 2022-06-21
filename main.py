@@ -26,7 +26,7 @@ img_name = basename(img)
 clear_img_name = '.'.join(img_name.split('.')[:-1])
 
 # open and read all files from archive (selected .zeai)
-img_archive = SevenZipFile(img, password='Quick2ZeraBossSq')
+img_archive = SevenZipFile(img)
 img_archive_files = img_archive.read()
 
 img_archive.close()

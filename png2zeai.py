@@ -57,6 +57,6 @@ connected_lines = f'scale {IMAGE_SCALE}\n' \
                   f'{connected_variables}\n' \
                   f'{resized_lines}'
 
-output = SevenZipFile(f'view/{output_image_name}.zeai', mode='w', password='Quick2ZeraBossSq')
+output = SevenZipFile(f'view/{output_image_name}.zeai', mode='w')
 output.writestr(connected_lines, f'{NAME}.zi')  # create file "{NAME}.zi" in the archive with the content ({connected_lines})
 output.close()
