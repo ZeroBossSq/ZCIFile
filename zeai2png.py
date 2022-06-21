@@ -1,27 +1,24 @@
-from random import choice
-from os import listdir
-from os.path import basename
+from os.path import basename, exists
 
 from py7zr import SevenZipFile
 from PIL import Image
 
 
-def hex_to_rgb(value):
+def hex2rgb(value):
     """Return (red, green, blue) for the color given as #rrggbb."""
     value = value.lstrip('#')
     lv = len(value)
     return tuple(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
 
 
-# get only .zeai (maybe "ZeroBossSq Experimental Archive Image") files from "view" dir
-imgs = [f'view/{file}' for file in listdir('view') if file.endswith(".zeai")]
+# get the img and check it
+img = input('Enter the art name: ')
+img = f'view/{img}.zeai'
 
-# if imgs list is empty - close the program
-if not imgs:
-    exit(0)
+if not exists(img):
+    print('Image not found!')
 
 # get the basic info from file
-img = choice(imgs)
 img_name = basename(img)
 clear_img_name = '.'.join(img_name.split('.')[:-1])
 
@@ -89,8 +86,6 @@ for line in lines_only_with_colours:
         fill_colour = image_colour_vars[colour] if colour in image_colour_vars.keys() else colour
         
         # set pixel/colour/block to the his place (x, y)
-        output_image.putpixel((x, y), hex_to_rgb(fill_colour))
+        output_image.putpixel((x, y), hex2rgb(fill_colour))
 
-image_out = output_image.resize((image_x_size * image_scale, image_y_size * image_scale), Image.NEAREST)
-
-image_out.show()
+output_image.save('zeai2png.png')
