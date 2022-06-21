@@ -12,7 +12,7 @@ ZEAI Viewer will automatically randomly select a file with an appropriate extens
 
 ## How to use ZEAI Creator
 
-* Download the latest release
+* Download the [latest release](https://github.com/ZeroBossSq/ZEAI-Viewer/releases/tag/Release)
 * Place a valid .png image in the folder with the 'png2zeai.exe' app
 * Rename your .png image to 'png2zeai.png'
 * Open 'png2zeai.exe' app
