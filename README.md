@@ -25,8 +25,4 @@ ZEAI Viewer will automatically randomly select a file with an appropriate extens
 
 ## License
 
-<<<<<<< HEAD
-This project is under the [GNU General Public License](./LICENSE) license.
-=======
 This project is under the [GNU General Public License v3.0](./LICENSE) license.
->>>>>>> 865b1e1c0fbf0868c251729b5dc5d2f15cfd94ae
